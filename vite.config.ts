@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   preview: {
-    allowedHosts: ['final-1-z55x.onrender.com'],
+    allowedHosts: ['final-1-z55x.onrender.com', '.onrender.com'],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
