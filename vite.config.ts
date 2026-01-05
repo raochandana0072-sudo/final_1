@@ -12,6 +12,9 @@ export default defineConfig(({ mode }) => ({
   preview: {
     allowedHosts: ['final-1-z55x.onrender.com', '.onrender.com'],
   },
+  build: {
+    chunkSizeWarningLimit: 1000,
+  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
